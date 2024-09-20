@@ -22,15 +22,24 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Main character": "res://Main character.dch"
+"Iris": "res://Characters/Iris.dch",
+"Jordi": "res://Characters/Jordi.dch",
+"Jorge": "res://Characters/Jorge.dch",
+"Kira": "res://Characters/Kira.dch",
+"Main character": "res://Characters/Main character.dch",
+"Styli": "res://Characters/Styli.dch",
+"Ysabelle": "res://Characters/Ysabelle.dch"
 }
 directories/dtl_directory={
-"Talking": "res://Talking.dtl"
+"Killer_route_studyOrFirst": "res://Timelines/Killer_route_studyOrFirst.dtl",
+"Talking": "res://Timelines/Ysabelle_death.dtl"
 }
 layout/style_list=[]
 layout/default_style="Default"
 glossary/default_case_sensitive=true
 variables={
+"DetectivePoints": 0,
+"KillerPoints": 0,
 "Name": "Joe",
 "Var": "Bomb"
 }

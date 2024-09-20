@@ -9,11 +9,10 @@
 "style": ""
 },
 "default_portrait": "",
-"description": "me for real
-",
-"display_name": "{Name}",
+"description": "",
+"display_name": "Iris",
 "mirror": false,
-"nicknames": ["Hot guy"],
+"nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {},
 "scale": 1.0

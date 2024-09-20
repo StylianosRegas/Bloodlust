@@ -1,0 +1,15 @@
+Jorge: Someone put it out!
+Styli: There has to be a fire extingusher somewhere!
+"Main character": (I scrambled to look around the kitchen with everyone else. But as I was looking, I could see Iris standing there, frozen staring at Ysabelle’s body.)
+(Styli found the extinguisher and got to pit pit the fire.)
+(Kira grabbed Iris' shoulders.)
+Kira: It'll be okay, we'll bring justice by catching the culprit
+(Kira took a breath and looked away)
+Iris: It's my fault...
+Styli: Don't blame yourself, we're all guilty for not chasing Ysabelle fast enough
+Iris: Let's find the killer then
+Kira: Alright then we’ll do a buddy system to cover more ground. One group stays on the first floor, and another goes back to the study with me, or to the second floor to try and open the other bedrooms.
+- I'll go back to the study with ira then
+	set {DetectivePoints} += 1
+- I'll Stay on the first floor
+	set {KillerPoints} += 1
