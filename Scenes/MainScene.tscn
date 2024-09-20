@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqnfakwkww2fr"]
+
+[ext_resource type="Texture2D" uid="uid://b0d0084iob4n0" path="res://BackgroundImages/MansionIntieriorTest.jpg" id="1_or6gr"]
+[ext_resource type="Script" path="res://Scripts/Text.gd" id="2_3oqph"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MansionIntieriorTest" type="Sprite2D" parent="."]
+position = Vector2(576.5, 320.5)
+scale = Vector2(2.13148, 1.775)
+texture = ExtResource("1_or6gr")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 479.0
+offset_top = 506.0
+offset_right = 635.0
+offset_bottom = 564.0
+text = "Go up the stairs?"
+script = ExtResource("2_3oqph")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
