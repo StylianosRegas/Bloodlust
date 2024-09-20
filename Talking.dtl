@@ -2,4 +2,4 @@ I GOT A GLOCK IN MY RARI
 - 23 Shots
 - ITS 17 SHOTS
 [text_input text="Type yo name fool" var="Name"]
-"Main character": Yo name is {Name}
+"Main character": Your name is  {Name}
