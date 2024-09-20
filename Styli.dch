@@ -1,0 +1,29 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(0.348526, 0.980469, 0.965658, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "StillImage",
+"description": "Man's best friend",
+"display_name": "Styli",
+"mirror": false,
+"nicknames": ["The greek god"],
+"offset": Vector2(0, 0),
+"portraits": {
+"StillImage": {
+"export_overrides": {
+"image": "\"res://Stills/IMG_20240916_151322_522.jpg\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}

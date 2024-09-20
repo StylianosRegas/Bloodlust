@@ -1,0 +1,45 @@
+RandomStudent: "Hey!!"
+RandomStudent: "I think this is yours?"
+Player: (The student hands over to me an ID)
+Player: (Oh, this is my ID!)
+[text_input text="Student ID" var="CharName.MainName" placeholder="Enter your name:"]
+Player: (I’m finally out of class for the day, thank God I’m free for tonight.)
+Player: (I’m meeting up with some friends for our Halloween plans.)\
+(We’re walking to the parking lot, exchanging idle chatter.)
+join Styli center
+Styli: "Everyone ready for tonight?"
+leave Styli
+join Iris center
+Iris: "Yeah, I’m excited to see what the mansion is like."
+leave Iris
+join Ysabelle center
+Ysabelle: "I don’t know, you guys remember what’s been going on in the news lately?
+Ysabelle: "The jack-o-lantern killer could be back. There have already been several victims."
+Ysabelle: "It’s been 5 years and suddenly he’s back."
+leave Ysabelle
+join Jordi center
+Jordi: "Really Ysabelle?"
+leave Jordi
+join Jorge center
+Jorge: "Come on we’re in a group, and there’s a low chance we’ll run into a serial killer."
+leave Jorge
+join Player center
+- "I agree, we’re in a college town, nothing bad should happen."
+- "I guess I understand where you’re coming from, Ysabelle. But the police are on the case so we should be okay."
+	set {DetectivePoints} = 1
+- "You know there’s no guarantee it is the jack-o-lantern killer, the case went cold years ago."
+	set {KillerPoints} = 1
+join Ysabelle center
+Ysabelle: "I guess, all right then let’s go."
+leave Ysabelle
+Player: (We got in the car and began heading to the mansion.)
+Player: (The plan was to visit the abandoned mansion outside of town and explore, maybe look for cool things left by the family.)
+Player: (The mansion, that’s the only name it goes by these days, some old money family lived there, and then one day the father killed himself, and slowly the family went mad.)
+Player: (People say they were haunted by something, that’s why it’s so popular for dares and rituals, I think some of the frat houses around here use it as an initiation.)
+Player: (Either way all we want to do is look around, pretty harmless I’d say.)
+[background fade="0.0"]
+join Ysabelle center
+Ysabelle: "Anyone having second thoughts?"
+leave Ysabelle
+join Iris center
+Iris: " I don’t know, outside the energy doesn’t feel any different, I heard haunted places with angry ghosts usually feel weird."
