@@ -1,0 +1,40 @@
+[background arg="res://images/Lobby.PNG" fade="0.0"]
+join Iris left [animation="Instant In"]
+join Jorge leftmost [animation="Instant In"]
+join Styli right [animation="Instant In"]
+join Kira center [animation="Instant In"]
+Kira: Okay, come with me then.
+Jorge: I will stay with Iris.
+Styli: So I'll be by myself?
+Kira: You can still look for a way to open the bedrooms. Look for any keys in the study with us.
+Styli: Alright then.
+leave Kira
+leave Styli
+leave Jorge
+leave Iris
+[background arg="res://images/DiningHall.PNG" fade="1.0"]
+We head to the upper floor
+[The protagonist and Kira walk up the creaky staircase, the sounds of the mansion's eerie silence filling the air.]
+join Kira center
+Kira: It's getting worse, isn't it? We're running out of time.
+[As they enter the study, Kira closes the door behind them. She takes out her notebook, laying it on the desk where the lanyard was found earlier.]
+Kira: I've been on this case for a while now. Too long. The killer has always been one step ahead.
+[She glances at the protagonist, her expression softening for the first time.]
+Kira: But with your help, we can finish this. We can stop them.
+- Reassure Kira
+	I smile
+	"Main character": You're not alone anymore, Kira. We'll get through this together.
+	(She smiled back with a sigh)
+	Kira: Thanks... I needed to hear that.
+- Ask Kira about the investigation
+	"Main character": You've been chasing this killer for a while. What's the missing piece?
+	[She paused, looking at the notes spread across the desk.]
+	Kira: The killer targets students, that much is clear. But why this mansion? Why tonight? There's something personal about this... I can feel it
+"Main character": (She turns, looking out the windown, lost in thought. then suddenly--)
+"Main character": (We heard a thud outside and bolted to the window.)
+(Cutscene of killer going in the shed)
+Kira: It's them! We have to move, now!
+"Main character": We're going after them!?
+Kira: No, they didn't spot us. This is our chance to surprise them, get everyone up here.
+[the pair runs to the first floor to Jorge and Iris]
+jump Talking/afterupordown

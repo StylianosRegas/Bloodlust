@@ -1,15 +1,58 @@
+[background arg="res://images/Lobby.PNG" fade="0.0"]
+join Jorge leftmost
 Jorge: Someone put it out!
+join Styli rightmost
 Styli: There has to be a fire extingusher somewhere!
+leave Jorge
+leave Styli
 "Main character": (I scrambled to look around the kitchen with everyone else. But as I was looking, I could see Iris standing there, frozen staring at Ysabelle’s body.)
 (Styli found the extinguisher and got to pit pit the fire.)
+join Iris left
+join Kira center
 (Kira grabbed Iris' shoulders.)
 Kira: It'll be okay, we'll bring justice by catching the culprit
 (Kira took a breath and looked away)
 Iris: It's my fault...
+join Styli right
 Styli: Don't blame yourself, we're all guilty for not chasing Ysabelle fast enough
 Iris: Let's find the killer then
+join Jorge leftmost
 Kira: Alright then we’ll do a buddy system to cover more ground. One group stays on the first floor, and another goes back to the study with me, or to the second floor to try and open the other bedrooms.
-- I'll go back to the study with ira then
+- I'll go back to the study with iris then
 	set {DetectivePoints} += 1
+	jump Killer_route_studyOrFirst/
 - I'll Stay on the first floor
 	set {KillerPoints} += 1
+	(Everyone made it to the living room and barely processing the news)
+	jump Detective_route_studyOrFirst/
+label afterupordown
+(I started getting ready to explain what I saw)
+"Main character": Something’s wrong...
+leave Styli [animation="Slide Out Down" length="0.3"]
+(The chandelier above Styli crashed down. There was no time to react. The massive fixture smashes into Styli, and then the impact broke the old floor causing Styli to fall to the first floor)
+Jorge: Styli no!
+(Styli’s body lies under the shattered chandelier. We stand in horror looking down.)
+(We’re not safe anywhere... What do we do now?)
+Kira: We need to leave. We can’t stay up here!
+Iris: I... I can’t believe this is happening.
+Jorge: We need to find a way out before we’re next!
+[The group heads downstairs together.]
+"Main character": (We reached the first floor; the mansion feels eerily silent as we stand before yet another body…)
+Kira: Stay close. Don’t lose sight of each other.
+"Main character": (We began investigating around the scene. This time though, we weren’t looking for any solutions, just a way out…)
+"Main character": Where do we go from here?
+Iris: Maybe we should split up, cover more ground—
+Kira: No! We stay together.
+leave Iris
+leave Jorge
+join Kira center
+"Main character": (With that in mind we moved through the rooms slowly.)
+"Main character": (Some time passed and we had no luck in finding keys or open doors to go outside. The backyard had such high fences it was never an option with the killer on the loose.)
+"Main character": (Something doesn’t feel right…)
+join Kira right
+join Jorge left
+Kira: Wait, where’s Iris?
+"Main character": I don’t know... she was just here!
+Jorge: We need to find her before the killer does.
+"Main character": (Suddenly, rapid footsteps approached us. The killer emerged from the shadows, sending us into an immediate panic)
+Kira: Run!

@@ -1,6 +1,55 @@
-Iris: I want to stay in the first floor, so {player} and I will look around
+[background arg="res://images/Lobby.PNG" fade="0.0"]
+join Iris left [animation="Instant In"]
+join Jorge leftmost [animation="Instant In"]
+join Styli right [animation="Instant In"]
+join Kira center [animation="Instant In"]
+[save slot="1"]
+Iris: I want to stay in the first floor, so {Name} and I will look around
 Styli: Jorge and I can try to open the bedrooms
 Kira: Sounds like a plan then
 "Main character": You don't mind being on your own?
 Kira: No, it’s fine, I’m probably the most competent on my own anyway. Scream if you need any help.
-(Iris and I made our way back to the kitchen. The burning smell lingered)
+leave Styli
+leave Jorge
+leave Iris
+leave Kira [animation="Bounce Out"]
+[background arg="res://images/DiningHall.PNG" fade="0.0"]
+Iris and I made our way back to the kitchen. The burning smell lingered
+Iris is shaken, she's staring at Ysabelle's body.
+We've already lost so many... We have to find this killer
+I glance around the kitchen, looking for any clues, but something feels off. The wind shifted, and I heard a faint noise-- footsteps? -- coming from outside.
+- Investigate the sound outside
+	"Main character": I'll be right back. I heard something outside.
+	Iris was distracted with something in the kitchen.
+	Iris: Wait, what? Do you want me to come with you?
+	No, it's probably nothing. I'll check it out quickly,
+- Call Iris over first
+	I whisper at Iris urgently.
+	"Main character": Iris, come here. I heard something outside.
+	Iris gave me a distracted nod
+	Iris: Yeah, just give me a second
+	I want a moment but the sound outside is getting louder. I can't shake the curiosity.
+I head to the backyard
+The backyard is eerily quiet . The wind rustles the leaves,but there's an unsettling stillness hanging in the air
+I took a look around cautiously, stepping further away from the house.
+"Main character": (Was someone out here..?)
+Something caught my eye. A figure stepped out from behing a tree near the shed-- tall, shadowy, and unmistakbly the killer.
+"Main character": (Is that...?)
+The killer paused as it saw me. For a moment, neither of us moved. He tilted his head slightly as if intrigued.
+Intrigued... by me...
+The killer steps closer, but somehow it doesn't feel threatening... he stopped just a few feet from me, staring directly at me. A twisted smile curled on his lips.
+Killer: Shh...
+He brough a finger to his lips in a chilling "shh" motion, signaling for me to stay silent. The look in his eyes was unsettling--part curiosity, part... interest?
+"Main character": (What... what are they doing?)
+He stepped back, still watching me carefully. Without another word, he turned and disappered into the shadows, leaving me standing there, heart racing.
+I rush back into the mansion
+My heart is pounding. I slam the door behind me. Iris is still in the kitchen, passing.
+join Iris center
+Iris: whoa what happened? You look so pale!
+"Main character": I saw them.. I saw the killer outside. They were right there, by the shed!
+Iris takes a look at my visibly shaking body, Just before she can respond a loud crash comes from the lobby.
+Iris: What now...?
+"Main character": We need to find the others!
+Me and Iris run out of the kitchen, we head towards the lobby and see Styli, Jorge, and Kira are gathered in the foyer, arguing. Styli turns to approach the others, but before he can say a word --]
+Me and Iris run upstairs as fast as possible to tell the others about what I saw
+jump Talking/afterupordown
