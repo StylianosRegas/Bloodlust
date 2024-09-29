@@ -1,5 +1,21 @@
-[gd_scene format=3 uid="uid://c1babv4vs5hil"]
+[gd_scene load_steps=2 format=3 uid="uid://c1babv4vs5hil"]
+
+[ext_resource type="Script" path="res://button.gd" id="1_wyu80"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Button" type="Button" parent="."]
+offset_left = 375.0
+offset_top = 220.0
+offset_right = 464.0
+offset_bottom = 266.0
+script = ExtResource("1_wyu80")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 401.0
+offset_top = 228.0
+offset_right = 441.0
+offset_bottom = 268.0
+text = "Play"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

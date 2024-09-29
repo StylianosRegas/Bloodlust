@@ -1,12 +1,9 @@
-[background arg="res://images/Lobby.PNG" fade="0.0"]
-join Jorge leftmost
+[background arg="res://images/Ysa_Dead.PNG" fade="0.0"]
 Jorge: Someone put it out!
-join Styli rightmost
 Styli: There has to be a fire extingusher somewhere!
-leave Jorge
-leave Styli
 "Main character": (I scrambled to look around the kitchen with everyone else. But as I was looking, I could see Iris standing there, frozen staring at Ysabelle’s body.)
-(Styli found the extinguisher and got to pit pit the fire.)
+(Styli found the extinguisher and got to pit the fire.)
+[background arg="res://images/Kitchen_Bkgrnd.PNG" fade="0.0"]
 join Iris left
 join Kira center
 (Kira grabbed Iris' shoulders.)
@@ -26,6 +23,11 @@ Kira: Alright then we’ll do a buddy system to cover more ground. One group sta
 	(Everyone made it to the living room and barely processing the news)
 	jump Detective_route_studyOrFirst/
 label afterupordown
+[background arg="res://images/Lobby.PNG" fade="0.0"]
+join Iris left
+join Styli center
+join Jorge right
+join Kira rightmost
 (I started getting ready to explain what I saw)
 "Main character": Something’s wrong...
 leave Styli [animation="Slide Out Down" length="0.3"]
@@ -43,14 +45,14 @@ Kira: Stay close. Don’t lose sight of each other.
 "Main character": Where do we go from here?
 Iris: Maybe we should split up, cover more ground—
 Kira: No! We stay together.
-leave Iris
+leave Kira
 leave Jorge
-join Kira center
+leave Iris
 "Main character": (With that in mind we moved through the rooms slowly.)
 "Main character": (Some time passed and we had no luck in finding keys or open doors to go outside. The backyard had such high fences it was never an option with the killer on the loose.)
+join Kira center
+join Jorge right
 "Main character": (Something doesn’t feel right…)
-join Kira right
-join Jorge left
 Kira: Wait, where’s Iris?
 "Main character": I don’t know... she was just here!
 Jorge: We need to find her before the killer does.

@@ -17,7 +17,7 @@
 "portraits": {
 "/main": {
 "export_overrides": {
-"image": "\"res://images/Jordi.png\""
+"image": "\"res://images/Kira_Talking.PNG\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

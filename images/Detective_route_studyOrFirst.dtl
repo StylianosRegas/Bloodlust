@@ -1,4 +1,4 @@
-[background arg="res://images/Lobby.PNG" fade="0.0"]
+[background arg="res://images/Kitchen_Bkgrnd.PNG" fade="0.0"]
 join Iris left [animation="Instant In"]
 join Jorge leftmost [animation="Instant In"]
 join Styli right [animation="Instant In"]
@@ -12,7 +12,7 @@ leave Kira
 leave Styli
 leave Jorge
 leave Iris
-[background arg="res://images/DiningHall.PNG" fade="1.0"]
+[background arg="res://images/Study_Bkgrnd.PNG" fade="1.0"]
 We head to the upper floor
 [The protagonist and Kira walk up the creaky staircase, the sounds of the mansion's eerie silence filling the air.]
 join Kira center
@@ -22,6 +22,7 @@ Kira: I've been on this case for a while now. Too long. The killer has always be
 [She glances at the protagonist, her expression softening for the first time.]
 Kira: But with your help, we can finish this. We can stop them.
 - Reassure Kira
+	set {DetectivePoints} += 1
 	I smile
 	"Main character": You're not alone anymore, Kira. We'll get through this together.
 	(She smiled back with a sigh)
@@ -37,4 +38,5 @@ Kira: It's them! We have to move, now!
 "Main character": We're going after them!?
 Kira: No, they didn't spot us. This is our chance to surprise them, get everyone up here.
 [the pair runs to the first floor to Jorge and Iris]
+leave Kira
 jump Talking/afterupordown
