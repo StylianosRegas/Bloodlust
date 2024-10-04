@@ -1,4 +1,5 @@
 extends Button
+@onready var opening_scene: Node2D = $".."
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,6 +12,9 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_pressed():
-	Dialogic.start("Talking")
+	opening_scene.visible = false
+	
+	Dialogic.start("Timelines/MainStory")
 	pass
+
 	

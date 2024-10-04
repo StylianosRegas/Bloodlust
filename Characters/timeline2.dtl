@@ -1,0 +1,140 @@
+[background arg="res://images/Lobby.PNG" fade="0.0"]
+join Kira center [animation="Instant In" length="0.0"]
+Kira: Everything is locked. There’s a high chance that the jack-o-lantern killer is inside this mansion, and this body here confirms it.
+Kira: I will not miss my chance to catch him just because of a group of irresponsible students.
+Kira: Now get moving and let’s assess our situation.
+"Main character": (Her nature… there’s something so alluring, Could it be we can help her catch the killer?)
+leave Kira
+"Main character": (With Kira’s directions we made our way over to Jordi…)
+[background arg="res://images/Jordi_Dead.PNG" fade="1.5"]
+"Main character": (I’m so sorry man…)
+Styli: The blood, it’s not just from his neck…
+"Main character": (He was right, the back of the couch he was sat on was drenched)
+"Main character": (Styli moved him carefully and then we saw it, several cuts on his back that reached deep.)
+"Main character": (As we all took a closer look it was obvious what had happened)
+- Jordi was stabbed and then gagged or something that impeded him from screaming...
+	"Main character": Jordi was stabbed and then gagged or something that impeded him from screaming, after that the killer waited for the pain to make him pass out and finished the job
+	set {KillerPoints} += 1
+- While we were in the kitchen and Jordi lagged behind the killer stabbed Jordi...
+	"Main character": While we were in the kitchen and Jordi lagged behind the killer stabbed Jordi and covered his mouth and cut off his head. Then fled the scene right after. Otherwise, we would’ve heard something. 
+	set {DetectivePoints} += 1
+- Since Jordi stayed behind, the killer saw him as an easy target...
+	"Main character": Since Jordi stayed behind, the killer saw him as an easy target... and dragged him here to set up the scene… stabbed him and somehow got him to not scream for help
+[background arg="res://images/Lobby.PNG" fade="1.5"]
+[wait time="1.5"]
+join Kira center [z_index="-5"]
+Kira: Correct, honestly, I’m surprised you guys didn’t notice your friend was missing.
+join Iris rightmost
+Iris (Scared): It’s our fault he got killed…
+join Ysabelle right
+Ysabelle (Scared): That stupid killer! He’s such a coward stabbing Jordi in the back like this. A bottom feeder. No good stupid coward!
+Kira: There’s no use lashing out now. Let’s keep going.
+"Main character": Where exactly?
+Kira: Upstairs, you guys wanted to explore the mansion, no? Besides, we can look for the killer there.
+leave Kira
+leave Iris
+leave Ysabelle
+[background arg="res://images/IMG_0095.PNG" fade="1.5"]
+"Main character": (The second floor looks just as uninhabited as the rest, there’s several doors that lead to other rooms. This is clearly where the family spent the most time.)
+join Kira center
+Kira: Let’s check the doors, come on.
+"Main character": (The detective's commanding nature in such a stressful situation… I feel kinda bad we’re ruining her investigation.)
+"Main character": (Let’s catch this killer, for Jordi.)
+leave Kira
+"Main character": (Everyone headed to a different door. Somehow, I’m the only one with a double door…)
+join Iris rightmost
+Iris: This one won’t budge.
+leave Iris
+join Jorge leftmost
+Jorge: Yeah, this one won’t either.
+leave Jorge
+join Styli right
+Styli: Same here.
+leave Styli
+join Ysabelle left
+Ysabelle: Mine did, it’s a bedroom.
+leave Ysabelle
+"Main character": (I looked around feeling nervous, I’d be too embarrassed if this important-looking door was locked, or if I wasn’t strong enough to open it. Especially with the detective looking at me like that.)
+"Main character": (I turned the doorknobs and both doors opened with a kind of style I wasn’t expecting.)
+"Main character": (I think I accidentally made myself look way cooler than I was…)
+[background arg="res://images/Study_Bkgrnd.PNG" fade="1.5"]
+[wait time="1.5"]
+join Kira center
+Kira: Nice, this is the study.
+"Main character": (She turned to look at me)
+Kira: Nice going. Let’s see what’s inside.
+"Main character": (Is she impressed?)
+"Main character": (This might just be the coolest and yet unsettling room in the mansion)
+"Main character": (The rumors around the university said that everywhere in the house looked completely abandoned but this…)
+"Main character": (Somehow it feels like someone has been here a while)
+- It’s clear the killer has been using this room…
+	set {KillerPoints} += 1
+	"Main character": It’s clear the killer has been using this room… but for how long? To think they were this close for who knows how long. Why act now? I’ll take a look around the room for clues
+	Kira: Clearly the killer has been using this room as a base of operations.
+- It looks like the killer was using this as a base.
+	"Main character": It looks like the killer was using this as a base.
+- I walked to the desk to see if there were any clues to the killer staying here.
+	set {DetectivePoints} += 1
+	"Main character": So, this is the killer's base? (I walked to the desk to see if there were any clues to the killer staying here.)
+Kira: Everyone looks for anything that could point to the killer’s motives or evidence of him staying here.
+leave Kira
+"Main character": (The group split up and looked around the room. I stayed near the desk and looked for any documents.)
+"Main character": (There’s no computer or anything, though I guess that’s useless since there’s no wifi here.)
+"Main character": (But there are some things in the cabinets…)
+"Main character": (Family photos, old pens, anything an office would need ages ago.)
+"Main character": (There’s a locked cabinet, or at least a lockable one, it’s unlocked… and the things inside look recent. Printer paper, newer pens and… a lanyard for our university…)
+- I found something in the cabinet here. Everything looks new.
+- (I take a closer look at all the notes first before telling anyone. I don’t need a crowd around me when I’m trying to figure things out.)
+	set {KillerPoints} += 1
+	"Main character": (I take a closer look at all the notes first before telling anyone. I don’t need a crowd around me when I’m trying to figure things out.)
+- Hey, Kira. There’s things in this cabinet. Like things the killer may have left behind.
+	set {DetectivePoints} += 1
+join Kira center
+Kira: What do you have there?
+"Main character": (I was holding the lanyard) It’s a lanyard from our university. But there’s no ID or keys attached.
+join Ysabelle right
+join Iris left
+join Styli rightmost
+join Jorge leftmost
+"Main character": (As I was speaking everyone started surrounding the desk. Some faces in shock at the realization)
+Kira: Interesting. So the killer could be a student?
+Jorge: It is, but this one looks new. And Initiations happen between spans of several months. And there aren’t any for tonight. Or this week.
+Jorge (Scared): Then it could belong to the killer?
+update Jorge (Main)
+Ysabelle: I refuse to believe that.
+"Main character": It looks like that’s the case though.
+Ysabelle (Scared): No! There’s no reason a student would do that!
+Styli (Scared): She’s not wrong, there’s no correlation to the victims being students… right?
+update Styli (New portrait)
+Kira: Actually, the original case was all students. And the recent ones have been close enough to the school where the investigation has assumed students could be targeted.
+Ysabelle (Scared): And the police department didn’t think to send out some PSA?!
+Kira: We weren’t trying to alert anyone of the investigation.
+Ysabelle (Scared): That’s so stupid! If there was some announcement at least around the school, we wouldn’t be here now! Do you understand that?!
+"Main character": Ysabelle calm down-
+Ysabelle (Scared): Don’t tell me to calm down!
+"Main character": Alright then think clearly, we need to focus right now-
+Ysabelle (Scared): Why are you so on board with this investigation?! It makes no sense! Nothing makes sense!
+"Main character": Quit being irrational! There’s nothing better to do right now besides help. Do you really want to sit around and get killed?!
+Ysabelle (Scared): I just want to get out of here!
+leave Ysabelle
+"Main character": (She ran outside the study.)
+Iris: I think she just needs a breather… Is it safe to leave her out there?
+Kira: No, go look outside and make sure she’s safe.
+leave Iris
+"Main character": (I could hear Iris take a few steps around outside, and then open and close the door to the bedroom Ysabelle had opened…)
+"Main character": (The alarming part was when I heard a single set of footsteps run back to the study.)
+join Iris left
+Iris (Scared): Ysabelle is gone!
+Kira: Everyone let’s go look for her!
+leave --All--
+[background arg="res://images/Lobby.PNG" fade="1.5"]
+[wait time="1.0"]
+join Iris left
+Iris: Do you guys smell that?
+"Main character": (I smelled the air, but I wasn’t getting anything…)
+join Styli (Scared) right
+Styli (Scared): From the kitchen!
+"Main character": (We ran to the kitchen as fast as we could. But the sight that waited for us was something I’d never forget…)
+leave Iris
+leave Styli
+jump Talking/

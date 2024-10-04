@@ -34,16 +34,21 @@ directories/dch_directory={
 directories/dtl_directory={
 "Detective_route_studyOrFirst": "res://images/Detective_route_studyOrFirst.dtl",
 "Killer_route_studyOrFirst": "res://Timelines/Killer_route_studyOrFirst.dtl",
-"Talking": "res://Timelines/Ysabelle_death.dtl"
+"MainStory": "res://images/NotMainStory.dtl",
+"Talking": "res://Timelines/Ysabelle_death.dtl",
+"Timelines/MainStory": "res://Timelines/MainStory.dtl",
+"timeline": "res://Characters/timeline.dtl",
+"timeline2": "res://Characters/timeline2.dtl"
 }
 layout/style_list=[]
 layout/default_style="Default"
 glossary/default_case_sensitive=true
 variables={
+"DetectiveName": "???",
 "DetectivePoints": 0,
+"KillerName": "???",
 "KillerPoints": 0,
-"Name": "Joe",
-"Var": "Bomb"
+"Name": ""
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
@@ -80,3 +85,8 @@ dialogic_default_action={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

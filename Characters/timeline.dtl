@@ -1,0 +1,135 @@
+[background arg="res://images/IMG_0095.PNG" fade="1.5"]
+"Main character": (I ran as fast as I could up the stairs weaving through the hallways to find a safe room to hide...)
+"Main character": (We're not fast enough!)
+"Main character": (As we were running through the living room, I could hear Jorge stumble...)
+join Jorge center
+Jorge (Scared): No-!
+"Main character": (I could hear the floor beneath Jorge give way, and I heard his scream as he fell through)
+Jorge (Scared): AAAAAHHH—!
+leave Jorge [animation="Slide Out Down"]
+"Main character": (I couldn’t look back. I couldn’t scream, or run back and help…)
+"Main character": (Jorge I’m so sorry…)
+"Main character": (I finally found an open bedroom door and bolted towards the closet as fast as I could.)
+[background arg="res://images/Darkness.jpg" fade="1.5"]
+"Main character": (I crouched and hid, taking deep breaths to steady my heartbeat trying to stay quiet.)
+"Main character": (Stay quiet. Just stay quiet...)
+"Main character": (But something felt off.)
+"Main character": (What’s that smell?)
+"Main character": (I fumbled for my phone to shine a dim light, and in the faint glow, I could see Iris's lifeless form staring back at me.)
+[background arg="res://images/Iris_Dead.PNG" fade="1.5"]
+"Main character":  (No… no…)
+"Main character": Iris...?
+"Main character": (I froze, trapped in the closet with Iris’s body.)
+"Main character": (The faint sound of footsteps echoes down the hall—approaching the bedroom.)
+"Main character": (No... no, no, no… please don’t come in here…)
+"Main character": (The footsteps grew louder, stopping just outside the closet. The door creaked open slowly and I held my breath, terrified. Through the crack in the closet door, I can see the killer’s silhouette)
+"Main character": (I’m dead… I’m dead…!)
+"Main character": (The killer approached the closet. Slowly, they opened the door…)
+[background arg="res://images/Study_Bkgrnd.PNG" fade="0.0"]
+join Killer center [animation="Fade In" length="1.0" wait="true"]
+"Main character": (He crouched down, his face inches from  mine as he extended his hand cupping my face softly.)
+Killer: Shhh…
+leave Killer [animation="Fade Out" length="1.0" wait="true"]
+"Main character": (Then he stood up and turned away as if uninterested. Leaving the closet door open, walking back toward the hallway.)
+"Main character": (What… just happened?)
+"Main character": (I hesitate for a moment, paralyzed with fear. Then, as soon as the killer’s footsteps fade, I bolted out of the closet)
+[background arg="res://images/Lobby.PNG" fade="1.5"]
+"Main character": (I ran down the stairs, nearly tripping in panic. I got to the first-floor lobby heart pounding in my chest.)
+"Main character": (Then I look down on the floor seeing the mess the chandelier fell left again…)
+[background arg="res://images/Styki&Jorge_Dead.PNG" fade="1.5"]
+[wait time="1.5"]
+"Main character": (I look around in a panic, everyone is gone now I need to find Kira…)
+[background arg="res://images/Lobby.PNG" fade="1.5"]
+"Main character": (I heard a faint movement and followed the sound to find Kira crouched behind a couch.]
+"Main character": (I crouched and went next to her)
+join Kira left [length="5.0" wait="true"]
+Kira: I’m so glad you’re alive…
+"Main character": We’re running out of time… we need to find a way out, now.
+"Main character": What are we going to do?!
+Kira: We’ll hide and wait for an opening. Then we get out of this place. Let’s stay together.
+"Main character": (As Kira and I crouch down, I notice a strange smell in the air.)
+"Main character": Do you smell that?
+Kira: Oh no…
+"Main character": (It sounds like Kira caught on faster than I did… I only realized what it was when the killer came through the hallway striking a match…)
+"Main character": Oh no…
+"Main character": (Kira pulled me back, holding me close now. The killer looked around the room, their eyes locking with mine for a moment. The smell of gasoline is overwhelming now.)
+Kira: (whispering urgently) We have to go—now!
+"Main character": (I stood up with Kira ready for a confrontation, but the killer had other plans as he let the match fall, and we watched the entire first floor slowly go up in flame)
+[background arg="res://images/Lobby_Burning.PNG" fade="1.5"]
+join Killer right
+"Main character": (Kira doesn’t waste a second and pulls out a gun from her holster.)
+"Main character": (The killer doesn’t fall behind and tries to grab it from her hand.)
+"Main character": (I have to act I know it…)
+"Main character": (But I don’t know who to help.)
+- Help the killer
+	if {KillerPoints} > {DetectivePoints}:
+		"Main character": I run towards the two as they fight, and I grab Kira’s arms to make her let go of the gun.)
+		Kira: What are you doing?! He’s dangerous!
+		"Main character": I think you might be wrong about him.
+		Kira: You can’t be serious…
+		"Main character": (I finally look into the killer’s eyes, and he draws me in completely…)
+		"Main character": (I take a step towards him, and he extends a hand.)
+		"Main character": (Somehow this feels right.)
+		"Main character": (As Kira stands in shock the killer takes the chance and shoots her.)
+		leave Kira [length="10.0"]
+		"Main character": (He and I stand there for a second in the burning house as we look at Kira’s body.)
+		leave Killer
+		"Main character": (I finally turned to look at him)
+		[background arg="res://images/KillerEnding.PNG" fade="1.5"]
+		"Main character": (I still don’t know his name.)
+		set {KillerName} = "Jack"
+		Killer: It’s Jack. 
+		"Main character": (I blink a few times surprised) 
+		"Main character": Let’s go then, Jack. 
+		"Main character": (I smile and leave the burning mansion behind.) 
+	else:
+		"Main character": (As I walk towards the struggle, I go to help the killer.) 
+		"Main character": (I see Kira look at me with relief and how her expression changes as I try to take the gun from her.) 
+		"Main character": (But her surprise is short-lived because the killer is also in shock and she takes the chance and shoots…) 
+		"Main character": (I can feel the shot to my stomach and I fall to the floor.) 
+		Kira: What’s wrong with you?! 
+		"Main character": I… 
+		"Main character": (I can’t think of anything but the pain right now…) 
+		leave Killer
+		"Main character": (Kira looks down at me and once she looks up again the killer is already running away.) 
+		"Main character": (She fires a few shots at him and misses.) 
+		"Main character": (The fire is consuming the house now and everything is falling apart…) 
+		"Main character": (And she looks for the door.)
+		leave Kira
+		[wait time="1.5"]
+		[background arg="res://images/Darkness.jpg" fade="1.5"]
+		"Main character": (She doesn’t look back and quickly my vision blurs) 
+		"Main character": (If only I helped the right person…) 
+- Help Kira.
+	if {DetectivePoints} > {KillerPoints}:
+		"Main character": (I run towards the fight and help Kira as she’s fighting back the killer.)
+		"Main character": (Amid the struggle she gets a good hold on the gun and shoots straight for the killer.)
+		leave Killer
+		"Main character": (As he lays there we seem to be breathing just as hard.)
+		"Main character": (Once we steady our breathing, I look at her…)
+		"Main character": (So much has happened.)
+		"Main character": (And the only thing I know is I want to stay with her.)
+		Kira: Let's get out of here!
+		"Main character": (I nodded) Yeah let’s go!
+		leave Kira
+		[wait time="1.5"]
+		[background arg="res://images/Detective_Ending.PNG" fade="1.5"]
+		"Main character": (I finally smiled, happy that at least we had made it, and we were together.)
+	else:
+		"Main character": (As I walk towards the struggle, I go to help Kira.) 
+		"Main character": (I try to help her get a grip on the gun, but the killer pushes the both of us.) 
+		"Main character": (He gets his finger on the trigger and takes the shot. )
+		"Main character": (I feel a stinging pain in my stomach…) 
+		"Main character": (My grip loosened, and I saw Kira look at me mortified.) 
+		Kira: No no no! 
+		"Main character": (I fall to the floor clutching my wound and I see the situation play out.) 
+		"Main character": (Kira takes the killer by surprise and takes the gun back pointing it at him.) 
+		"Main character": (But the house begins falling apart and the killer makes his escape…) 
+		leave Killer
+		"Main character": (Kira goes to reach for me but it sounds like the ceiling will cave in any moment.) 
+		Kira: I’m sorry… 
+		leave Kira
+		[wait time="1.5"]
+		[background arg="res://images/Darkness.jpg" fade="1.5"]
+		"Main character": (and with that she leaves…) 
+		"Main character": (If only I helped the right person…) 

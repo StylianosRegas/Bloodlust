@@ -1,21 +1,35 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1babv4vs5hil"]
+[gd_scene load_steps=5 format=3 uid="uid://c1babv4vs5hil"]
 
 [ext_resource type="Script" path="res://button.gd" id="1_wyu80"]
+[ext_resource type="Texture2D" uid="uid://dy3wgth71yyc1" path="res://StartScreen.jpg" id="1_xde2k"]
+[ext_resource type="Script" path="res://quitButton.gd" id="2_1ex8b"]
+[ext_resource type="PackedScene" uid="uid://8rkft3oojnxk" path="res://Ending screen.tscn" id="3_4qbun"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Game" type="Node2D"]
+position = Vector2(2, 0)
 
-[node name="Button" type="Button" parent="."]
-offset_left = 375.0
-offset_top = 220.0
-offset_right = 464.0
-offset_bottom = 266.0
+[node name="Ending_scene" parent="." instance=ExtResource("3_4qbun")]
+
+[node name="Opening_scene" type="Node2D" parent="."]
+
+[node name="Quit" type="Button" parent="Opening_scene"]
+offset_left = 49.0
+offset_top = 533.0
+offset_right = 313.0
+offset_bottom = 604.0
+script = ExtResource("2_1ex8b")
+
+[node name="Play" type="Button" parent="Opening_scene"]
+offset_left = 51.0
+offset_top = 445.0
+offset_right = 312.0
+offset_bottom = 516.0
 script = ExtResource("1_wyu80")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 401.0
-offset_top = 228.0
-offset_right = 441.0
-offset_bottom = 268.0
-text = "Play"
+[node name="Sprite2D" type="Sprite2D" parent="Opening_scene"]
+position = Vector2(587, 319)
+scale = Vector2(0.612037, 0.612037)
+texture = ExtResource("1_xde2k")
 
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Opening_scene/Quit" to="Opening_scene/Quit" method="_on_pressed"]
+[connection signal="pressed" from="Opening_scene/Play" to="Opening_scene/Play" method="_on_pressed"]
