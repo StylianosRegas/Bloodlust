@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://8rkft3oojnxk"]
+
+[ext_resource type="Script" path="res://quitButton.gd" id="1_5ghx7"]
+[ext_resource type="Texture2D" uid="uid://csyeetrnmjbxv" path="res://Thanks for playing!.jpg" id="1_jg0cq"]
+
+[node name="Ending scene" type="Node2D"]
+
+[node name="quitEnd" type="Button" parent="."]
+offset_left = 427.0
+offset_top = 432.0
+offset_right = 687.0
+offset_bottom = 502.0
+script = ExtResource("1_5ghx7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(566, 326.25)
+scale = Vector2(0.60787, 0.60787)
+texture = ExtResource("1_jg0cq")
+
+[connection signal="pressed" from="quitEnd" to="quitEnd" method="_on_pressed"]
